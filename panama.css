@@ -1,0 +1,124 @@
+body{
+    background-image:linear-gradient(rgba(207, 205, 205, 0.6), rgba(207, 205, 205, 0.6)), url(panabi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(36, 33, 33);
+    font-size: px;
+    min-height: 100vh;
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+hr{
+    color: rgb(226, 17, 17);
+}
+#head{
+    background: rgb(149, 150, 155) ;
+    color: black;
+    margin: auto;
+}
+.header{
+    height: 80px;
+    margin: 10px;
+    opacity: 40%;   
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    padding: 10px;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-content: center;
+}
+ul li a{
+    color: whitesmoke;
+    letter-spacing: 0.1rem;
+}
+ul li a:hover{
+    color: rgb(238, 6, 6); 
+    text-decoration: none;
+}
+.menu li{
+    float: left;
+    padding: 30px;
+    opacity: 60%;
+    display: inline;
+}
+.menu li a{
+    text-decoration: none;
+}
+#cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+#toph{
+   width: 720px;
+   overflow: hidden;
+   justify-content: center;
+   border: 2px solid rgb(2, 110, 110);
+}
+.img{
+    display: flex;
+    animation-duration: 15s;
+    animation-name: mestoph;
+    animation-iteration-count: infinite;
+}   
+@keyframes mestoph {
+    0%{transform: translateX(0);} 
+    25%{transform: translateX(-720px);} 
+    50%{transform: translateX(-1440px);}
+    75%{transform: translateX(-2160px);}
+    100%{transform: translateX(0);} 
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+footer{
+    background:rgb(149, 150, 155) ;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+    bottom: 0;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width:500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.footer-bottom{
+    background-color: black;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: 4;
+    font-weight: 200;
+}

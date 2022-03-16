@@ -1,0 +1,128 @@
+body{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0 ,0 ,0 , 0.6)), url(kua4.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: repeat-y;
+    background-color:rgb(255, 255, 255);
+    color: rgb(56, 137, 190);
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+}
+#head{
+    background: rgb(58, 175, 243) ;
+    color: black;
+    margin: auto;
+    opacity: 70%;
+}
+.header{
+    height: 80px;
+    margin: 10px;
+    opacity: 40%;   
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    padding: 10px;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-content: center;
+}
+ul li a{
+    color: whitesmoke;
+    letter-spacing: 0.1rem;
+}
+ul li a:hover{
+    color: rgb(238, 6, 6); 
+    text-decoration: none;
+}
+.menu li{
+    float: left;
+    padding: 30px;
+    opacity: 60%;
+    display: inline;
+}
+.menu li a{
+    text-decoration: none;}
+    #cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+        opacity: 60%;
+    }
+    p{
+        font-size: 15px;
+    }
+    #toph{
+       width: 720px;
+       overflow: hidden;
+       justify-content: center;
+       
+    }
+    .img{
+        align-content: center;
+        display: flex;
+        animation-duration: 15s;
+        animation-name: mestoph;
+        animation-iteration-count: infinite;
+    }   
+    @keyframes mestoph {
+        0%{transform: translateX(0);} 
+        33%{transform: translateX(-720px);} 
+        66%{transform: translateX(-1440px);}
+        100%{transform: translateX(0);}    
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    footer{
+        background: rgb(143, 208, 245) ;
+        height: auto;
+        width: 100vw;
+        padding-top: 40px;
+        color: #fff;
+        bottom: 0;
+    }
+    .footer-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-content h3{
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 3rem;
+    }
+    .footer-content p{
+        max-width:500px;
+        margin: 10px auto;
+        line-height: 28px;
+        font-size: 14px;
+    }
+    .footer-bottom{
+        background-color: black;
+        width: 100vw;
+        padding: 20px 0;
+        text-align: center;
+    }
+    .footer-bottom p{
+        font-size: 14px;
+        word-spacing: 2px;
+        text-transform: capitalize;
+    }
+    .footer-bottom span{
+        text-transform: uppercase;
+        opacity: 4;
+        font-weight: 200;
+    }
